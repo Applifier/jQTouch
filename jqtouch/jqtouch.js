@@ -45,6 +45,7 @@
             extensions=$.jQTouch.prototype.extensions,
             animations=[],
             hairExtensions='',
+            isAndroid=RegExp("Android").test(navigator.userAgent),
             defaults = {
                 addGlossToIcon: true,
                 backSelector: '.back, .cancel, .goback',
@@ -65,7 +66,7 @@
                 statusBar: 'default', // other options: black-translucent, black
                 submitSelector: '.submit',
                 touchSelector: 'a, .touch',
-                useAnimations: true,
+                useAnimations: (isAndroid) ? false : true,
                 useFastTouch: true, // experimental
                 animations: [ // highest to lowest priority
                     {selector:'.cube', name:'cubeleft', is3d:true},
@@ -885,7 +886,7 @@
             if (jQTSettings.fullScreenClass && window.navigator.standalone == true) {
                 $body.addClass(jQTSettings.fullScreenClass + ' ' + jQTSettings.statusBar);
             }
-            if (window.navigator.userAgent.match(/Android/ig)) { // Grr... added to postion checkbox labels. Lame. I know. - js
+            if (isAndroid == true) { // Grr... added to postion checkbox labels. Lame. I know. - js
                 $body.addClass('android');
             }
 
