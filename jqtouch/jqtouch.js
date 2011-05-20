@@ -46,6 +46,7 @@
             animations=[],
             hairExtensions='',
             isAndroid=RegExp("Android").test(navigator.userAgent),
+            isiOS=RegExp("iPod|iPhone|iPad").test(navigator.userAgent),
             defaults = {
                 addGlossToIcon: true,
                 backSelector: '.back, .cancel, .goback',
@@ -886,8 +887,12 @@
             if (jQTSettings.fullScreenClass && window.navigator.standalone == true) {
                 $body.addClass(jQTSettings.fullScreenClass + ' ' + jQTSettings.statusBar);
             }
-            if (isAndroid == true) { // Grr... added to postion checkbox labels. Lame. I know. - js
+
+            if (isAndroid == true) {
                 $body.addClass('android');
+            }
+            if (isiOS == true) {
+                $body.addClass('ios');
             }
 
             // Bind events
