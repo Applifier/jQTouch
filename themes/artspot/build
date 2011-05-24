@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./build_css.js theme.styl

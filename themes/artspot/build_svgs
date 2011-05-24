@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for i in *.svg; do
+  file=`basename $i .svg`
+  echo "$i:"
+  convert -background transparent $i $file.png
+done
