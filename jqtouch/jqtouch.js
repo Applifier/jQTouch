@@ -331,6 +331,11 @@
                 _debug('We are on the right panel');
             } else {
                 _debug('We are not on the right panel');
+                if (hist[1] == undefined) {
+                    _debug("No history, going to new panel");
+                    goTo(location.hash);
+                    return;
+                }
                 if(location.hash === hist[1].hash) {
                     goBack();
                 } else {
