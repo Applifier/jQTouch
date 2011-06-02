@@ -44,7 +44,7 @@ body,
 #jqt ul li a {
   font-weight: bold;
   font-size: 1.125em;
-  text-shadow: #fff 0 0.062em 0;
+  text-shadow: #fff 0 0.0625em 0;
   margin: 0.625em 1.25em 0.3125em;
 }
 #jqt .toolbar {
@@ -84,24 +84,24 @@ body,
 #jqt .add {
   position: absolute;
   overflow: hidden;
-  top: 0.65em;
-  right: 1em;
+  top: 0.7272727272727273em;
+  right: 0.9090909090909091em;
   margin: 0;
-  padding: 0.1em 0.5em;
+  padding: 0 0.7272727272727273em;
   width: auto;
-  height: 2.6em;
-  line-height: 2.5em;
+  height: 2.727272727272727em;
+  line-height: 2.727272727272727em;
   font-family: inherit;
   font-size: 0.6875em;
   font-weight: bold;
   color: #fff;
-  text-shadow: rgba(0,0,0,0.5) 0 0.0625em 0;
+  text-shadow: rgba(0,0,0,0.5) 0em 0.09090909090909091em 0;
   text-overflow: ellipsis;
   text-decoration: none;
   white-space: nowrap;
   background: rgba(0,0,0,0.4);
   text-transform: uppercase;
-  border-radius: 0.5em;
+  border-radius: 0.7272727272727273em;
 }
 #jqt .button.active,
 #jqt .cancel.active,
@@ -111,18 +111,18 @@ body,
   text-shadow: none;
 }
 #jqt .back {
-  left: 0.375em;
+  left: 0.5454545454545454em;
   right: auto;
-  max-width: 3.5em;
-  padding-left: 0.6875em;
-  border-width: 0 0 0 0.5625em;
-  border-radius: 0 0.5em 0.5em 0;
+  max-width: 3.727272727272727em;
+  padding-left: 1em;
+  border-width: 0 0 0 0.8181818181818182em;
+  border-radius: 0 0.7272727272727273em 0.7272727272727273em 0;
   -webkit-mask-image: url("img/mask_button_back.svg");
-  -webkit-mask-size: 5em 3em;
+  -webkit-mask-size: 5.454545454545454em 2.727272727272727em;
 }
 #jqt .leftButton,
 #jqt .cancel {
-  left: 0.375em;
+  left: 0.5454545454545454em;
   right: auto;
 }
 #jqt .add {
@@ -236,7 +236,7 @@ body,
   background-image: url("img/chevron.svg");
   background-position: right center !important;
   background-repeat: no-repeat !important;
-  background-size: 1em 1em;
+  background-size: 1.25em 1em;
 }
 #jqt ul li.arrow a {
   padding: 0.75em 1.375em 0.75em 0.625em;
@@ -245,7 +245,7 @@ body,
   background-image: url("img/chevron_circle.svg");
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 1.8em 1.4em;
+  background-size: 2.0625em 1.4375em;
 }
 #jqt ul li a,
 #jqt li.img a + a {
@@ -348,14 +348,14 @@ body,
   color: rgba(255,255,255,0.4);
 }
 #jqt ul li textarea {
-  height: 7.05em;
+  height: 7.5em;
   padding: 0;
-  text-indent: -0.11em;
+  text-indent: -0.125em;
 }
 #jqt ul li select {
-  text-indent: 0;
+  text-indent: 0em;
   background: transparent url("img/chevron.svg") no-repeat right center;
-  background-size: 1.18em 0.95em;
+  background-size: 1.25em 1em;
   -webkit-appearance: textfield;
   margin-left: -0.375em;
   width: 102%;
@@ -364,14 +364,14 @@ body,
 #jqt ul li input[type="radio"] {
   margin: 0;
   padding: 0.625em 0.625em;
+  font-size: 0.8888em;
 }
 #jqt ul li input[type="checkbox"]:after,
 #jqt ul li input[type="radio"]:after {
   content: attr(title);
   font-weight: normal;
-  font-size: 1.0625em;
   display: block;
-  width: 14.47em;
+  width: 15.375em;
   color: #fff;
   margin: -0.75em 0 0 1.0625em;
 }
@@ -400,7 +400,7 @@ body,
   padding: 0.25em 0.625em 0.3125em 0.625em;
   display: block;
   width: auto;
-  margin-top: -1.4em;
+  margin-top: -1.5em;
 }
 #jqt ul li.arrow small.counter {
   margin-right: 0.9375em;
@@ -436,7 +436,7 @@ body,
   -webkit-border-radius: 0.5em;
 }
 #jqt .toggle {
-  width: 5.22em;
+  width: 5.222222222222222em;
   position: relative;
   height: 1.5em;
   display: block;
@@ -453,15 +453,15 @@ body,
   -webkit-transition: left 0.15s;
   background-color: transparent;
   background: #fff url("img/on_off.png") 0 0 no-repeat;
-  background-size: 13.9em 2.5em;
+  background-size: 9.3125em 1.6875em;
   border: 0;
-  height: 2.5em;
-  left: -5.1em;
+  height: 1.6875em;
+  left: -3.4375em;
   margin: 0;
   overflow: hidden;
   position: absolute;
   top: 0;
-  width: 13.6em;
+  width: 9.3125em;
 }
 #jqt .info {
   font-size: 0.75em;
@@ -493,7 +493,7 @@ body,
   background-image: url("img/chevron.svg");
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 1em 1em;
+  background-size: 1.25em 1em;
 }
 #jqt ul.edgetoedge li.sep {
   background: rgba(255,255,255,0.25);
@@ -546,13 +546,13 @@ body,
   background-image: url("img/chevron_dark.svg");
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 1em 1em;
+  background-size: 1.25em 1em;
 }
 #jqt ul.plastic li.forward {
   background-image: url("img/chevron_circle.svg");
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 1.8em 1.4em;
+  background-size: 2.0625em 1.4375em;
 }
 #jqt ul.plastic li a.active {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,0)), to(rgba(255,255,255,0.5)));
@@ -572,10 +572,10 @@ body,
   padding: 0;
 }
 #jqt ul.metal li a {
-  padding: 0.8125em;
-  line-height: 1.2em;
+  padding: 0.65em;
+  line-height: 1.3em;
   margin: 0;
-  text-shadow: rgba(255,255,255,0.7) 0 0.0625em 0;
+  text-shadow: rgba(255,255,255,0.7) 0 0.05em 0;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#c8c8c8));
 }
 #jqt ul.metal li a em {
@@ -600,7 +600,7 @@ body,
   background-image: url("img/chevron.svg"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#9c9ea0));
   background-position: right center;
   background-repeat: no-repeat;
-  background-size: 1em 1em;
+  background-size: 1.25em 1em;
 }
 #jqt ul.metal li.arrow a small {
   padding-right: 0.9375em;
