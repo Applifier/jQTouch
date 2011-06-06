@@ -650,7 +650,7 @@
                     var id_cb = id.data('callback') || undefined;
                     var referrer = id.data('referrer', $el);
 
-                    if (id_cb != undefined && id.find('> *').length == 0) {
+                    if (id_cb != undefined) {
                       currentPage.addClass('loading');
                       $el.addClass('active');
 
