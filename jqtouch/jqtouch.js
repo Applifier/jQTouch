@@ -86,6 +86,7 @@
                     {selector:'.slideright', name:'slideright', is3d:false},
                     {selector:'.slideup', name:'slideup', is3d:false},
                     {selector:'.swap', name:'swapleft', is3d:true},
+                    {selector:'.none', name:'none', is3d:false},
                     {selector:'#jqt > * > ul li a', name:'slideleft', is3d:false}
                 ]
             };

@@ -73,8 +73,22 @@ body {
 
 
 
+/* None */
 
+#jqt .none.in {
+    -webkit-animation-name: noneAnim;
+}
 
+#jqt .none.out {
+    -webkit-animation-name: noneAnim;
+}
+
+@-webkit-keyframes noneAnim {
+    0% {
+    } 
+    100% {
+    }
+}
 
 /* Fade */
 
