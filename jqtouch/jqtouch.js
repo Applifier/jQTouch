@@ -91,8 +91,8 @@
             };
 
         function _debug(message) {
-            now = (new Date).getTime();
-            delta = now - lastTime;
+            var now = (new Date).getTime();
+            var delta = now - lastTime;
             lastTime = now;
             if (jQTSettings.debug) {
                 if (message) {
@@ -335,9 +335,11 @@
             } else {
                 _debug('We are not on the right panel');
                 if (hist[1] == undefined) {
-                    _debug("No history, going to new panel");
-                    goTo(location.hash);
-                    return;
+                    _debug("No history, going to new panel: " + location.hash);
+                    var panel = $(location.hash);
+                    addPageToHistory(panel);
+                    goTo(panel);
+                    return false;
                 }
                 if(location.hash === hist[1].hash) {
                     goBack();
