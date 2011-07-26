@@ -971,4 +971,4 @@
         $.jQTouch.prototype.extensions.push(extension);
     }
 
-})(jQuery);
+})(window.jQuery || window.$);
