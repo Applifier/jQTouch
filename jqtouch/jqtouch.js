@@ -644,7 +644,7 @@
                 };
 
                 if (!animation) {
-                    _log('Animation could not be found. Using ' + jQTSettings.backSelector + '.');
+                    _log('Animation could not be found. Using ' + jQTSettings.defaultAnimation + '.');
                     animation = jQTSettings.defaultAnimation;
                 }
 
