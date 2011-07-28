@@ -185,6 +185,7 @@
             if ($.support.animationEvents && animation && jQTSettings.useAnimations) {
 
                 tapReady = false;
+
                 setTimeout(function() {
                   tapReady = true;
                 }, 1000);
@@ -382,7 +383,7 @@
 
             // Set viewport
             if (jQTSettings.fixedViewport) {
-                hairExtensions += '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>';
+                hairExtensions += '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>';
             }
 
             // Set full-screen
@@ -549,7 +550,7 @@
 
             // Dev must want touch, so check for support
             // in case this check fails, NEVER ever fall back to user agent hacks
-              if (('ontouchstart' in window)) {
+            if (('ontouchstart' in window)) {
                 return true;
             } else {
                 return false;
@@ -669,7 +670,6 @@
                       goTo(referrer, animation, $el.hasClass('reverse'));
                     }
                     return false;
-
                 } else {
                     // External href
                     $el.addClass('loading active');
