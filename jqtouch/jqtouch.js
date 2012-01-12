@@ -808,8 +808,7 @@
         init(options);
 
         // Document ready stuff
-//        $(document).ready(function() {
-
+        $(document).ready(function() {
             // Store some properties in the jQuery support object
             $.support.animationEvents = supportForAnimationEvents();
             $.support.cssMatrix = supportForCssMatrix();
@@ -947,7 +946,7 @@
             // Make sure none of the panels yank the location bar into view
             $('#jqt > *').css('minHeight', window.innerHeight);
 
-//        });
+        });
 
         // Expose public methods and properties
         publicObj = {
